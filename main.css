@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(205, 174, 218);
 }
@@ -158,15 +162,18 @@ body {
 
 @media all and (min-width: 1200px){
     .topnav #name:hover {
-        font-size: 25px;
+        text-decoration: underline;
+        text-underline-position: under;
     }
     
     .topnav #link:hover {
-        font-size: 19px;
+        text-decoration: underline;
+        text-underline-position: under;
     }
     
     .topnav #resume:hover {
-        font-size: 19px;
+        text-decoration: underline;
+        text-underline-position: under;
     }
 }
 
