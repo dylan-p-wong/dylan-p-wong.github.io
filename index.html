@@ -13,27 +13,27 @@
 <body>
 
     <div class="topnav">
-        <a class="link" id="name">Dylan Wong</a>
-        <a id="resume" href="resume.pdf">Resume</a>
-        <a id="link" href="https://github.com/dylan-p-wong">GitHub</a>
+        <a class="link" id="name" href="#top">Dylan Wong</a>
+        <a id="resume" href="resume.pdf" target="_blank">Resum&eacute;</a>
+        <a id="link" href="https://github.com/dylan-p-wong" target="_blank">GitHub</a>
     </div>
 
-    <header id="home" class="hero-area">    
+    <header id="home" class="hero-area" name="top">    
         <div class="overlay">
             <span></span>
             <span></span>
         </div> 
         <div class="container">      
             <div class="contents">
-                <div class="card">
+                <div class="card" data-aos="fade-up" data-aos-duration="2000">
                     <div>
                         <h1>Dylan Wong</h1>
                         <br>
                         <p>University of Waterloo</p>
                         <p>Candidate for Bachelor of Software Engineering (1A, 2025)</p>
-                        <a href="https://www.linkedin.com/in/dylan-wong-73b8371a3/" class="fa fa-linkedin fa-2x"></a>
-                        <a href="https://github.com/dylan-p-wong" class="fa fa-github fa-2x"></a>
-                        <a href="mailto:dpwong88@gmail" class="fa fa-envelope fa-2x"></a>
+                        <a href="https://www.linkedin.com/in/dylan-wong-73b8371a3/" target="_blank" class="fa fa-linkedin fa-2x"></a>
+                        <a href="https://github.com/dylan-p-wong" target="_blank" class="fa fa-github fa-2x"></a>
+                        <a href="mailto:dpwong88@gmail" target="_blank" class="fa fa-envelope fa-2x"></a>
                     </div>
                     <img src="img/profile.PNG">
                 </div>
@@ -44,13 +44,13 @@
     <div class="projects">
         <h1>Projects</h1>
         <div class=holder>
-            <div class="display">
+            <div class="display" data-aos="fade-left" data-aos-duration="2000">
                 <h2>Discord Renewal Subscirpiton with Stripe Payments</h2>
 
                 <button>View Live</button>
                 <button>View Code</button>
             </div>
-            <div class="display">
+            <div class="display" data-aos="fade-right" data-aos-duration="2000">
                 <h2>Golf Tee Time System</h2>
 
                 <button>View Live</button>
@@ -62,10 +62,13 @@
 
     <div class="gallery">
         <div class="contents">
-            <p>test</p>
-            <p>test</p>
-            <p>test</p>
+            <img src="img/golf.PNG" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="img/reselling.jpg" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="img/dog.jpg" data-aos="zoom-in" data-aos-duration="1000">
         </div>
+    </div>
+    <div class="footer">
+        <p>Built with GitHub Pages</p>
     </div>
 
     <script>

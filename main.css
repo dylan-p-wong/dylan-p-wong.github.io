@@ -40,7 +40,7 @@ body {
 }
 
 .hero-area .contents {
-    padding: 220px 0; 
+    padding: 200px 0; 
 }
 
 .hero-area .contents .card {
@@ -76,6 +76,29 @@ body {
     color: inherit;
     padding: 20px;
     text-decoration: none;
+}
+
+@media all and (max-width: 1200px){
+    .hero-area .contents {
+        padding: 80px 0; 
+    }
+
+    .hero-area .contents .card{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 600px;
+    }
+
+    .hero-area .contents .card h1{
+        font-size: 40px;
+        padding: 12px;
+    }
+
+    .hero-area .contents .card p{
+        font-size: 15px;
+        padding-left: 12px;
+    }
 }
 
 .topnav {
@@ -118,16 +141,33 @@ body {
     font-size: 24px;
 }
 
-.topnav #name:hover {
-    font-size: 26px;
+@media all and (max-width: 1000px){
+    .topnav #name {
+        font-size: 13px;
+    }
+
+    .topnav #resume {
+        font-size: 13px;
+        padding: 8px 9px;
+    }
+
+    .topnav #link {
+        font-size: 13px;
+    }
 }
 
-.topnav #link:hover {
-    font-size: 20px;
-}
-
-.topnav #resume:hover {
-    font-size: 20px;
+@media all and (min-width: 1200px){
+    .topnav #name:hover {
+        font-size: 25px;
+    }
+    
+    .topnav #link:hover {
+        font-size: 19px;
+    }
+    
+    .topnav #resume:hover {
+        font-size: 19px;
+    }
 }
 
 .projects {
@@ -155,6 +195,7 @@ body {
     background-color: rgb(253, 248, 238);
     transform: skew(-0.3deg) rotate(0.3deg);
     margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .projects button {
@@ -183,9 +224,33 @@ body {
 .gallery .contents{
     display: flex;
     justify-content: space-evenly;
-    -webkit-transform: skewY(-12deg);
-    transform: skewY(-5deg);
-    padding: 200px;
+    -webkit-transform: skewY(-1deg);
+    transform: skewY(-0.3deg);
+    padding: 150px 10px 100px 10px;
+}
+
+@media all and (max-width: 1200px){
+    .gallery .contents{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.gallery img {
+    padding: 12px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 5px solid rgb(218, 200, 164);
+}
+
+
+
+.footer {
+    padding: 10px;
+    position: static;
+    margin-top: 160px;
 }
 
 
