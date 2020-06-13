@@ -147,7 +147,7 @@ body {
 
 @media all and (max-width: 1000px){
     .topnav #name {
-        font-size: 13px;
+        font-size: 20px;
     }
 
     .topnav #resume {
@@ -160,21 +160,19 @@ body {
     }
 }
 
-@media all and (min-width: 1200px){
-    .topnav #name:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-    }
-    
-    .topnav #link:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-    }
-    
-    .topnav #resume:hover {
-        text-decoration: underline;
-        text-underline-position: under;
-    }
+.topnav #name:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.topnav #link:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+.topnav #resume:hover {
+    text-decoration: underline;
+    text-underline-position: under;
 }
 
 .projects {
@@ -196,7 +194,7 @@ body {
 
 .projects .holder .display{
     width: 600px;
-    height: 300px;
+    height: auto;
     border: 3px solid rgb(218, 200, 164);
     border-radius: 15px;
     background-color: rgb(253, 248, 238);
@@ -205,12 +203,29 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.projects button a {
+    color: khaki;
+    background-color: rgb(164, 111, 202);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
 .projects button {
     margin-top: 20px;
     color: khaki;
     padding: 6px;
     background-color: rgb(164, 111, 202);
     border-radius: 8px;
+    text-decoration: none;
+}
+
+.projects img {
+    margin: 10px;
+    padding: 12px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 5px solid rgb(218, 200, 164);
 }
 
 .gallery {
@@ -245,14 +260,13 @@ body {
 }
 
 .gallery img {
+    margin: 10px;
     padding: 12px;
     width: 300px;
     height: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border: 5px solid rgb(218, 200, 164);
 }
-
-
 
 .footer {
     padding: 10px;
